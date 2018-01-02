@@ -4,7 +4,8 @@
   "description": "zenandmotorcycles",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ./scripts/build",
+    "serve": "serve ./public"
   },
   "author": "nitin.singh",
   "license": "ISC",
