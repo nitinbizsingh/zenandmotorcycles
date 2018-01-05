@@ -68,6 +68,7 @@ const downloadFolderFromGithub = (downloadUrl, callback) => {
       'User-Agent': 'AWS Lambda Function' // Without that Github will reject all requests
     }
   }, (error, response, body) => {
+    console.log(body)
     JSON.parse(body).forEach((fileObject) => {
       if(fileObject.type == 'file'){
         filesToDownload.push(fileObject)
