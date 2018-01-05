@@ -7,9 +7,6 @@ const zlib = require('zlib');
 const path = 'static/';
 const bucketName = "zenandmotorcycles.com";
 
-const mailMessage = `Deploy to ${bucketName}/${path} succeeded!`;
-const mailSubject = 'Deploy succeeded';
-
 const sns = new AWS.SNS();
 const s3 = new AWS.S3({
   params: {
@@ -33,12 +30,11 @@ const computeContentType = (filename) => {
 
 const putFileToS3 = (fileObject) => new Promise((resolve, reject) => {
   const gzip = zlib.createGzip();
-
-  console.log(fileObject.name)
-
   const publicFolderName = "/public/"
   const start = fileObject.download_url.indexOf(publicFolderName) + publicFolderName.length
   const filePath =  fileObject.download_url.substring(start);
+
+  console.log(filePath)
 
   request(fileObject.download_url)
     .pipe(gzip)
