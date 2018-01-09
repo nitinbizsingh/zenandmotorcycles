@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "description": "zenandmotorcycles",
   "main": "index.js",
+  "watch": {
+    "build": {
+      "patterns": ["src"],
+      "extensions": "js,css,ejs"
+    }
+  },
   "scripts": {
     "build": "node ./scripts/build",
-    "serve": "serve ./public"
+    "serve": "serve ./public",
+    "watch": "npm-watch"
   },
   "author": "nitin.singh",
   "license": "ISC",
+  "devDependencies": {
+    "npm-watch": "^0.3.0"
+  },
   "dependencies": {
     "ejs": "^2.5.7",
     "fs-extra": "^4.0.2",
