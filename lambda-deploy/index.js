@@ -36,18 +36,21 @@ const putFileToS3 = (fileObject) => new Promise((resolve, reject) => {
 
   console.log(filePath)
 
+  var randomFileName = Math.random();
+  console.log(randomFileName)
+
   request(fileObject.download_url)
     .pipe(gzip)
-    .pipe(fs.createWriteStream(`/tmp/${fileObject.name}`))
+    .pipe(fs.createWriteStream(`/tmp/${randomFileName}`))
     .on('finish', () => {
       s3.upload({
         Bucket: bucketName,
         Key: filePath,
-        Body: fs.createReadStream(`/tmp/${fileObject.name}`),
+        Body: fs.createReadStream(`/tmp/${randomFileName}`),
         ACL: 'public-read',
         CacheControl: 'max-age=31536000',
         ContentType: computeContentType(fileObject.name),
-        ContentEncoding: 'gzip',
+        ContentEncoding: 'gzip'
       }, (error) => {
         if (error) return reject();
         else return resolve();
