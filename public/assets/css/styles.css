@@ -11,12 +11,6 @@ body {
 
 a {
   color: #0091dc;
-  text-decoration: none;
-  border-bottom: 3px solid transparent;
-}
-
-a:hover {
-  border-bottom: 3px solid #0091dc;
 }
 
 body {
@@ -51,6 +45,16 @@ body {
   vertical-align: middle;
   padding: 0px 20px 0px 20px;
   color: black;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.page-header-link:hover{
+  border-bottom: 3px solid #0091dc;
+}
+
+.page-header-link: hover{
+  border-bottom: 3px solid #0091dc;
 }
 
 .page-header-link-selected{
