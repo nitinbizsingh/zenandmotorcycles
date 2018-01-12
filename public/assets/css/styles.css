@@ -28,13 +28,12 @@ body {
 .page-header-ul{
   margin: 0px;
   text-align: center;
+  padding: 0px;
 }
 
 .page-header-li{
   display: inline-table;
   height: 50px;
-  margin-right: 10px;
-  margin-left: 10px;
   margin-bottom: -3px;
 }
 
