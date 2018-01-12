@@ -48,7 +48,7 @@ const putFileToS3 = (fileObject) => new Promise((resolve, reject) => {
         Key: filePath,
         Body: fs.createReadStream(`/tmp/${randomFileName}`),
         ACL: 'public-read',
-        CacheControl: 'max-age=31536000',
+        CacheControl: 'max-age=0',
         ContentType: computeContentType(fileObject.name),
         ContentEncoding: 'gzip'
       }, (error) => {
