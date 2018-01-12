@@ -17,6 +17,8 @@ const s3 = new AWS.S3({
 const computeContentType = (filename) => {
   const parts = filename.split('.');
   switch (filename.split('.')[parts.length-1]) {
+    case 'jpg':
+      return "image/jpg";
     case 'png':
       return "image/png";
     case 'html':
