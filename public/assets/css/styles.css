@@ -1,19 +1,19 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-html {
+html{
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%
 }
 
-body {
+body{
   margin: 0
 }
 
-a {
+a{
   color: #0091dc;
 }
 
-body {
+body{
   padding: 0px;
   margin: 0px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -21,7 +21,7 @@ body {
   line-height: 1.5;
 }
 
-.page-header {
+.page-header{
   color: #fff;
 }
 
@@ -60,6 +60,20 @@ body {
   border-bottom: 3px solid #0091dc;
 }
 
-.main-content {
+.main-content{
   word-wrap: break-word;
+  margin-top: 25px;
+}
+
+.photos-container-block{
+  display: block;
+  margin-bottom: 20px;
+}
+
+.photos-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 500px;
+  max-width: 90%;
 }

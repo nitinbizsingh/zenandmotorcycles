@@ -1,0 +1,12 @@
+{
+	"photos":[
+		{
+			"path":"/data/photos/test.jpg",
+			"location": "office"
+		},
+		{
+			"path":"/data/photos/test2.jpg",
+			"location": "USA"
+		}
+	]
+}

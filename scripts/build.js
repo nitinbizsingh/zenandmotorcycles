@@ -14,6 +14,9 @@ fse.emptyDirSync(distPath)
 // copy assets folder
 fse.copy(`${srcPath}/assets`, `${distPath}/assets`)
 
+// copy data folder
+fse.copy(`${srcPath}/data`, `${distPath}/data`)
+
 // read page templates
 globP('**/*.ejs', { cwd: `${srcPath}/pages` })
   .then((files) => {
