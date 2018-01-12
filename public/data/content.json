@@ -1,11 +1,11 @@
 {
 	"photos":[
 		{
-			"path":"/data/photos/test.jpg",
+			"path":"/data/photos/photo.jpg",
 			"location": "office"
 		},
 		{
-			"path":"/data/photos/test2.jpg",
+			"path":"/data/photos/photo2.jpg",
 			"location": "USA"
 		}
 	]
