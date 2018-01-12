@@ -23,6 +23,9 @@ body{
 
 .page-header{
   color: #fff;
+  -webkit-box-shadow: 0 8px 6px -6px lightgrey;
+  -moz-box-shadow: 0 8px 6px -6px lightgrey;
+  box-shadow: 0 8px 6px -6px lightgrey;
 }
 
 .page-header-ul{
@@ -68,12 +71,19 @@ body{
 .photos-container-block{
   display: block;
   margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .photos-img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-height: 500px;
-  max-width: 90%;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .photos-img {
+        width: 50%;
+    }
 }
