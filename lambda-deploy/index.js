@@ -29,6 +29,8 @@ const computeContentType = (filename) => {
       return "text/css";
     case 'otf':
       return "application/font-sfnt";
+    case 'md':
+      return "text/markdown";
   }
 };
 

@@ -2,8 +2,8 @@
 	document.getElementById("page-header-link-photos").classList.add("page-header-link-selected");
 </script>
 
-<% site.content.photos.forEach((photo) => { %>
-	<div class="photos-container-block">
+<% site.photos.forEach((photo) => { %>
+	<div class="photos-list-container-block">
     	<img src="<%= photo.path %>" class="photos-img">
     </div>
 <% }) %>

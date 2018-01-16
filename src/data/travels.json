@@ -1,0 +1,12 @@
+{
+	"data":[
+		{
+			"title": "Test travel story title",
+			"slug": "slug1"
+		},
+		{
+			"title": "Test travel story title 2",
+			"slug":"slug2"
+		}
+	]
+}

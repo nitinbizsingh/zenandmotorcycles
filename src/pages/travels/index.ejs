@@ -1,3 +1,11 @@
 <script>
 	document.getElementById("page-header-link-travels").classList.add("page-header-link-selected");
 </script>
+
+<% site.travels.forEach((travel) => { %>
+	<a href="/travels/<%= travel.slug %>" class="travels-list-container-block">
+		<div class="">
+    		<b> <%= travel.title %> </b>
+    	</div>
+    </a>
+<% }) %>

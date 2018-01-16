@@ -1,9 +1,11 @@
 const fse = require('fs-extra')
 const path = require('path')
+const ejs = require('ejs')
 const { promisify } = require('util')
-const ejsRenderFile = promisify(require('ejs').renderFile)
+const ejsRenderFile = promisify(ejs.renderFile)
 const globP = promisify(require('glob'))
 const config = require('../site.config')
+const marked = require('marked')
 
 const srcPath = './src'
 const distPath = './public'
@@ -18,7 +20,7 @@ fse.copy(`${srcPath}/assets`, `${distPath}/assets`)
 fse.copy(`${srcPath}/data`, `${distPath}/data`)
 
 // read page templates
-globP('**/*.ejs', { cwd: `${srcPath}/pages` })
+globP('**/*.@(ejs|md)', { cwd: `${srcPath}/pages` })
   .then((files) => {
     files.forEach((file) => {
       const fileData = path.parse(file)
@@ -27,12 +29,27 @@ globP('**/*.ejs', { cwd: `${srcPath}/pages` })
       // create destination directory
       fse.mkdirs(destPath)
         .then(() => {
-          // render page
-          return ejsRenderFile(`${srcPath}/pages/${file}`, Object.assign({}, config))
+          
+          // read page file
+          return fse.readFile(`${srcPath}/pages/${file}`, 'utf-8')
         })
-        .then((pageContents) => {
-          // render layout with page contents
-          return ejsRenderFile(`${srcPath}/layout.ejs`, Object.assign({}, config, { body: pageContents }))
+        .then((data) => {
+          
+          // generate page content according to file type
+          let pageContent
+          
+          switch (fileData.ext) {
+            case '.md':
+              pageContent = marked(data)
+              break
+            case '.ejs':
+              pageContent = ejs.render(data, config)
+              break
+            default:
+              pageContent = data
+          }
+
+          return ejsRenderFile(`${srcPath}/layout.ejs`, Object.assign({}, config, { body: pageContent }))
         })
         .then((layoutContent) => {
           // save the html file

@@ -5,8 +5,10 @@
   "main": "index.js",
   "watch": {
     "build": {
-      "patterns": ["src"],
-      "extensions": "js,css,ejs,jpg,json,otf"
+      "patterns": [
+        "src"
+      ],
+      "extensions": "js,css,ejs,jpg,json,otf,md"
     }
   },
   "scripts": {
@@ -23,6 +25,7 @@
     "ejs": "^2.5.7",
     "fs-extra": "^4.0.2",
     "glob": "^7.1.2",
+    "marked": "^0.3.12",
     "serve": "^6.0.6",
     "standard": "^10.0.3"
   }

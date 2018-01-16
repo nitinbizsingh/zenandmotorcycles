@@ -68,24 +68,29 @@ body{
 .main-content{
   word-wrap: break-word;
   margin-top: 25px;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.photos-container-block{
+@media screen and (min-width: 480px) {
+    .main-content {
+        width: 50%;
+    }
+}
+
+.photos-list-container-block{
   display: block;
   margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .photos-img{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
 }
 
-@media screen and (min-width: 480px) {
-    .photos-img {
-        width: 50%;
-    }
+.travels-list-container-block{
+  margin-bottom: 25px;
+  text-decoration: none;
 }
