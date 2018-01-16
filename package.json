@@ -6,7 +6,7 @@
   "watch": {
     "build": {
       "patterns": ["src"],
-      "extensions": "js,css,ejs,jpg,json"
+      "extensions": "js,css,ejs,jpg,json,otf"
     }
   },
   "scripts": {

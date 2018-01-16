@@ -5,8 +5,9 @@ html{
   -webkit-text-size-adjust: 100%
 }
 
-body{
-  margin: 0
+@font-face {
+    font-family: museo_slab_500;
+    src: url("../museo_slab_500.otf");
 }
 
 a{
@@ -22,6 +23,7 @@ body{
 }
 
 .page-header{
+  font-family: "museo_slab_500", helvetica, arial, sans-serif;
   color: #fff;
   -webkit-box-shadow: 0 8px 6px -6px lightgrey;
   -moz-box-shadow: 0 8px 6px -6px lightgrey;

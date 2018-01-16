@@ -27,6 +27,8 @@ const computeContentType = (filename) => {
       return "application/javascript";
     case 'css':
       return "text/css";
+    case 'otf':
+      return "application/font-sfnt";
   }
 };
 
