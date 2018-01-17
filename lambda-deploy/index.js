@@ -18,6 +18,7 @@ const computeContentType = (filename) => {
   const parts = filename.split('.');
   switch (filename.split('.')[parts.length-1]) {
     case 'jpg':
+    case 'JPG':
       return "image/jpg";
     case 'png':
       return "image/png";

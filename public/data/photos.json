@@ -1,16 +1,20 @@
 {
 	"data":[
 		{
-			"path":"/data/photos/photo2.jpg",
-			"location": "Office",
-			"created_timestamp": 1516172879,
-			"description": "Sample description for photo is going to be very long. The quick brown fox jumps over the lazy lazy dog. The quick brown fox jumps over the lazy lazy dog. The quick brown fox jumps over the lazy lazy dog."
+			"name":"DSC_1002.JPG",
+			"location": "Lincoln memorial, Washington DC, USA",
+			"created_timestamp": 1513002120,
+			"description": "The sun just peeking over the Lincoln memorial on a cold and crisp winter afternoon",
+			"album": "USA convocation trip",
+			"tags": ["USA trip", "convocation"]
 		},
 		{
-			"path":"/data/photos/photo.jpg",
-			"location": "USA",
-			"created_timestamp": 1516172862,
-			"description": "Sample description for photo 2"
+			"name":"DSC_0965.JPG",
+			"location": "Lincoln memorial park, Washington DC, USA",
+			"created_timestamp": 1512999360,
+			"description": "Scenic walkway leading to the Lincoln memorial. So wanted to go for a run here. Next time for sure!",
+			"album": "USA convocation trip",
+			"tags": ["USA trip", "convocation"]
 		}
 	]
 }
