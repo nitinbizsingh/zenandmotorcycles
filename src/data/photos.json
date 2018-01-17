@@ -5,7 +5,7 @@
 			"location": "Lincoln memorial, Washington DC, USA",
 			"created_timestamp": 1513002120,
 			"description": "The sun just peeking over the Lincoln memorial on a cold and crisp winter afternoon",
-			"album": "USA convocation trip",
+			"album": "USA_convocation_trip",
 			"tags": ["USA trip", "convocation"]
 		},
 		{
@@ -13,7 +13,7 @@
 			"location": "Lincoln memorial park, Washington DC, USA",
 			"created_timestamp": 1512999360,
 			"description": "Scenic walkway leading to the Lincoln memorial. So wanted to go for a run here. Next time for sure!",
-			"album": "USA convocation trip",
+			"album": "USA_convocation_trip",
 			"tags": ["USA trip", "convocation"]
 		}
 	]
