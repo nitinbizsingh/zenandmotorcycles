@@ -19,13 +19,35 @@
   			<a href="/travels" id="page-header-link-travels" class="page-header-link">Travels</a>
   		</li>
   		<li class="page-header-li"> 
-  			<a href="/blog" id="page-header-link-blog" class="page-header-link">Blog</a>
+  			<a href="/blogs" id="page-header-link-blogs" class="page-header-link">Blogs</a>
   		</li>
   		<li class="page-header-li"> 
   			<a href="/about" id="page-header-link-about" class="page-header-link">About</a>
   		</li>
   	</ul>
 </section>
+
+<script type="text/javascript">
+  const currentSectionName = window.location.pathname.split('/')[1];
+  var currentSection = null;
+
+  switch(currentSectionName){
+    case 'photos':
+      currentSection = document.getElementById("page-header-link-photos");
+      break;
+    case 'travels':
+      currentSection = document.getElementById("page-header-link-travels");
+      break;
+    case 'blogs':
+      currentSection = document.getElementById("page-header-link-blogs");
+      break;
+    case 'about':
+      currentSection = document.getElementById("page-header-link-about");
+      break;
+  }
+
+  currentSection.classList.add("page-header-link-selected");
+</script>
 
 <section class="main-content">
   

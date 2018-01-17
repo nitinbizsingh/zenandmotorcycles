@@ -1,9 +1,12 @@
-<script>
-	document.getElementById("page-header-link-photos").classList.add("page-header-link-selected");
-</script>
-
 <% site.photos.forEach((photo) => { %>
 	<div class="photos-list-container-block">
     	<img src="<%= photo.path %>" class="photos-img">
+    	<%  
+    		const createdTimestamp = photo.created_timestamp;
+    		const date = new Date(createdTimestamp * 1000);
+    		const dateString = date.getDate() + "." + (date.getMonth() + 1) + "." + date.getFullYear();
+    	%>
+    	<p class="photo-meta-info"> <%= photo.location %> • <%= dateString %> </p>
+    	<p class="photo-description"> <%= photo.description %> </p>
     </div>
 <% }) %>
