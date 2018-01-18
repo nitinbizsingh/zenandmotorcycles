@@ -157,6 +157,7 @@ img{
   color: rgb(87, 99, 104);
   font-size: 14px;
   line-height: 18px;
+  padding-top: 2px;
 }
 
 @media screen and (min-width: 480px) {
