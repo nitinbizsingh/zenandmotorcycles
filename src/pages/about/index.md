@@ -5,7 +5,7 @@
 This site is a place to put up my photos, travel stories and blogs, kind of like an open journal. I enjoy doing things mentioned in the bio above in no particular order of preference. Though if I have to pick one I find the combination of travelling and motorcycles most appealing most of the times. This is clearly reflected in the name of this site too, duh!!!
 
 
-The inspiration to make this site was originally born out of satisfying the curiosity to do "backend things" given I have been a Mobile and JS developer most of my life. I was tired of hearing, mostly through people who have never done front-end or mobile development, how superior/complex/whatever all this backend development stuff is and thought of giving it a try. Though I have to admit this is a very simple first project but its a first step nonethless and I have to say it was a lot of fun, yay!!! to learning new things.
+The inspiration to make this site was originally born out of satisfying the curiosity to do "backend things" given I have been a Mobile and JS developer most of my life. I was tired of hearing, mostly through people who have never done front-end or mobile development, how superior/complex/whatever all this backend development stuff is and thought of giving it a try. Though I have to admit this is a simple project but its a first step nonethless and it was a lot of fun, yay!!! to learning new things.
 
 
 On the same topic the **whole source code of this website is available** at the below mentioned repo. Please suggest better ways of doing things if you have the time to go through the source:
