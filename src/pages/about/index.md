@@ -9,7 +9,7 @@ The inspiration to make this site was originally born out of satisfying the curi
 
 
 On the same topic the **whole source code of this website is available** at the below mentioned repo. Please suggest better ways of doing things if you have the time to go through the source:
-https://github.com/singhnitin88/zenandmotorcycles/
+<a href="https://github.com/singhnitin88/zenandmotorcycles/" target="_blank">https://github.com/singhnitin88/zenandmotorcycles/</a>
 
 
 If you find anything interesting enough here and want to reach out to me feel free to use any of the mediums mentioned below.
