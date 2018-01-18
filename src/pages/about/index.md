@@ -2,7 +2,7 @@
 <h1 class="about_name">Nitin Singh</h1><div class="about_divider"></div>
 <div class="about_summary">Thinker, Fitness noob, Motorcycle enthusiast, Android/iOS developer</div>
 <br>
-This site is a place to put up my photos, travel stories and blogs kind of like an open journal. I enjoy doing things mentioned in the bio above in no particular order of preference. Though if I have to pick one I find the combination of travelling and motorcycles most appealing most of the times. This is clearly reflected in the name of this site too, duh!!!
+This site is a place to put up my photos, travel stories and blogs, kind of like an open journal. I enjoy doing things mentioned in the bio above in no particular order of preference. Though if I have to pick one I find the combination of travelling and motorcycles most appealing most of the times. This is clearly reflected in the name of this site too, duh!!!
 
 
 The inspiration to make this site was originally born out of satisfying the curiosity to do "backend things" given I have been a Mobile and JS developer most of my life. I was tired of hearing, mostly through people who have never done front-end or mobile development, how superior/complext/whatever all this backend development stuff is and thought of giving it a try. Though I have to admit this is a very simple first project but its a first step nonethless and I have to say it was a lot of fun, yay!!! to learning new things.
