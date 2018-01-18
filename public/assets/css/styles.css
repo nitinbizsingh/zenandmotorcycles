@@ -9,6 +9,11 @@ html{
     src: url("../museo_slab_500.otf");
 }
 
+@font-face {
+    font-family: idealsans_book;
+    src: url("../idealsans_book.otf");
+}
+
 a{
   color: #0091dc;
   -webkit-tap-highlight-color: transparent;
@@ -17,7 +22,8 @@ a{
 body{
   padding: 0px;
   margin: 0px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "idealsans_book", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -91,7 +97,7 @@ img{
 .photo-meta-info{
   margin: 0px;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 16px;
   padding-top: 10px;
   color: rgb(38, 38, 38);
 }
@@ -99,7 +105,7 @@ img{
 .photo-description{
   margin: 0px;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 16px;
   color: rgb(87, 99, 104);
   padding-top: 5px;
   padding-bottom: 5px;
@@ -126,7 +132,7 @@ img{
   color: black;
   font-size: 24px;
   font-weight: bold;
-  line-height: 20px;  
+  line-height: 20px;
 }
 
 .article-list-item-separator{
@@ -138,13 +144,13 @@ img{
 .article-list-item-meta-info{
   color: rgb(38, 38, 38);
   font-size: 12px;
-  line-height: 15px;
+  line-height: 16px;
 }
 
 .article-list-item-summary{
   color: rgb(87, 99, 104);
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
 }
 
 @media screen and (min-width: 480px) {
