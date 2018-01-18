@@ -160,6 +160,33 @@ img{
   padding-top: 2px;
 }
 
+.about_profile_pic{
+  display: block;
+  max-height: 280px;
+}
+
+.about_name{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.about_divider{
+  height: 2px;
+  background-color: black;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about_summary{
+  padding-top: 5px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media screen and (min-width: 480px) {
   .main-content {
       width: 60%;
@@ -180,5 +207,13 @@ img{
   .photo-description {
     padding-bottom: 0px;
     line-height: 16px;
+  }
+
+  .about_divider{
+    width: 20%;
+  }
+
+  .about_summary{
+    width: 50%;
   }
 }
