@@ -35,6 +35,18 @@ const computeContentType = (filename) => {
   }
 };
 
+const computeMaxAge = (filename) => {
+  const parts = filename.split('.');
+  switch (filename.split('.')[parts.length-1]) {
+    case 'jpg':
+    case 'JPG':
+    case 'png':
+      return 'max-age=31536000'
+    default:
+      return 'max-age=0'
+  }
+};
+
 const putFileToS3 = (fileObject) => new Promise((resolve, reject) => {
   const gzip = zlib.createGzip();
   const publicFolderName = "/public/"
@@ -55,7 +67,7 @@ const putFileToS3 = (fileObject) => new Promise((resolve, reject) => {
         Key: filePath,
         Body: fs.createReadStream(`/tmp/${randomFileName}`),
         ACL: 'public-read',
-        CacheControl: 'max-age=0',
+        CacheControl: computeMaxAge(fileObject.name),
         ContentType: computeContentType(fileObject.name),
         ContentEncoding: 'gzip'
       }, (error) => {
