@@ -1,0 +1,23 @@
+.archive {
+  font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  padding-bottom: 60px;
+
+  h2.year {
+    color: #444444;
+  }
+
+  ul.list {
+    padding-left: 50px;
+    li {
+      padding: 10px 0;
+      line-height: 1.5;
+    }
+  }
+  .date {
+    margin-right: 30px;
+    color: #7f8c8d;
+  }
+}
